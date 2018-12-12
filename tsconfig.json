@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "outDir": "build/dist",
     "module": "esnext",
-    "target": "es6",
+    "target": "es5",
     "lib": ["es6", "dom"],
     "sourceMap": true,
     "allowJs": true,
@@ -18,6 +18,10 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "services/*": ["./src/services/*"]
+    },
     "esModuleInterop": true
   },
   "exclude": [

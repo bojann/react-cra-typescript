@@ -1,30 +1,34 @@
 import React, { Component } from "react";
 import CustomButton from "components/shared/buttons/CustomButton";
 
-class ButtonWidget extends Component {
-  state = {
+interface State {
+  btnName: string;
+  bsStyle: string;
+  bsSize: string;
+  isVisible: boolean;
+}
+
+class ButtonWidget extends Component<{}, State> {
+  public state = {
     btnName: "Add Item",
     bsStyle: "primary",
     bsSize: "small",
     isVisible: false
   };
+  public handleClickAddBtn = () => null;
 
-  componentDidMount() {
-    this.btnStyle = {
+  public render() {
+    const btnStyle = {
       add: "add-button",
       remove: "remove-button",
       change: "change-button"
     };
-  }
 
-  handleClickAddBtn = () => {};
-
-  render() {
     return (
       <div className="poke-btn-widget">
         <CustomButton
           {...this.state}
-          className={this.btnStyle.add}
+          className={btnStyle.add}
           handleClickEvent={this.handleClickAddBtn}
         >
           Add Item

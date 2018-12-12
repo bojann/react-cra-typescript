@@ -5,21 +5,32 @@ import PokeDetail from "components/pokeapi/pokedetails/PokeDetail";
 
 import "./PokeCompare.scss";
 
+interface Props {
+  selectedItems: string[];
+}
+
+interface State {
+  selectedItems: string[];
+}
+
 const storage = window.localStorage;
 
-class PokeCompare extends Component {
-  state = {
+class PokeCompare extends Component<Props, State> {
+  public state = {
     selectedItems: []
   };
 
-  componentDidMount() {
-    let pokemons = [];
+  public componentDidMount() {
+    let pokemons: string[] = [];
     const { selectedItems } = this.props;
 
     if (selectedItems && selectedItems.length) {
       pokemons = selectedItems;
     } else {
-      pokemons = JSON.parse(storage.getItem("selectedPokemons"));
+      const pokeLocalStorage = storage.getItem("selectedPokemons");
+      if (pokeLocalStorage) {
+        pokemons = JSON.parse(pokeLocalStorage);
+      }
     }
 
     storage.setItem("selectedPokemons", JSON.stringify(pokemons));
@@ -30,13 +41,13 @@ class PokeCompare extends Component {
     });
   }
 
-  renderPokeCompareList = () => {
+  private renderPokeCompareList = () => {
     return this.state.selectedItems.map(pokemon => {
       return <PokeDetail key={pokemon} pokemon={pokemon} />;
     });
   };
 
-  render() {
+  public render() {
     return this.state.selectedItems.length ? (
       <div>{this.renderPokeCompareList()}</div>
     ) : null;

@@ -3,16 +3,38 @@ import PropTypes from "prop-types";
 
 import CustomButton from "components/shared/buttons/CustomButton";
 
-class ButtonAddItem extends PureComponent {
-  state = {
+interface Props {
+  selectMultiplePokemonFlag: boolean;
+  handleClickAddPokemon: (
+    event: React.SyntheticEvent<HTMLSelectElement>
+  ) => void;
+  "data-idname": number | string;
+}
+
+interface State {
+  className: string;
+  bsStyle: string;
+  bsSize: string;
+}
+
+class ButtonAddItem extends PureComponent<Props, State> {
+  public static propTypes = {
+    selectMultiplePokemonFlag: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.bool
+    ]),
+    "data-idname": PropTypes.string
+  };
+
+  public state = {
     className: "add-button",
     bsStyle: "primary",
     bsSize: "small"
   };
 
-  render() {
+  public render() {
     const dataIdName = this.props["data-idname"];
-    const isDisabled = this.props.selectMultiplePokemonFlag ? false : true;
+    const isDisabled = !this.props.selectMultiplePokemonFlag;
     const handleClickEvent = this.props.handleClickAddPokemon;
 
     return (
@@ -27,13 +49,5 @@ class ButtonAddItem extends PureComponent {
     );
   }
 }
-
-ButtonAddItem.propTypes = {
-  selectMultiplePokemonFlag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.bool
-  ]),
-  "data-idname": PropTypes.string
-};
 
 export default ButtonAddItem;

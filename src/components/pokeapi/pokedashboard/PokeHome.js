@@ -30,7 +30,7 @@ class PokeHome extends PureComponent {
 
   debounceEvent(...args) {
     this.debouncedEvent = debounce(...args);
-    return e => {
+    return (e: React.SyntheticEvent<EventTarget>) => {
       e.persist();
       return this.debouncedEvent(e);
     };
@@ -87,7 +87,7 @@ class PokeHome extends PureComponent {
     );
   };
 
-  handleClickPokemon = (ev) => {
+  handleClickPokemon = ev => {
     const selectedPoke = ev.currentTarget.dataset.idname;
     this.getPokeData(selectedPoke);
   };
@@ -112,15 +112,15 @@ class PokeHome extends PureComponent {
           handleClickBtnCompare={handleClickBtnCompare}
           selectMultiplePokemonFlag={this.state.selectMultiplePokemonFlag}
         />
-          <ListGroup>
-            <PokeItems
-              handleClickAddPokemon={handleClickAddPokemon}
-              handleClickRemovePokemon={handleClickRemovePokemon}
-              selectMultiplePokemonFlag={this.state.selectMultiplePokemonFlag}
-              pokemons={this.state.filteredPokeResponse}
-              handleClickPokemon={this.handleClickPokemon}
-            />
-          </ListGroup>
+        <ListGroup>
+          <PokeItems
+            handleClickAddPokemon={handleClickAddPokemon}
+            handleClickRemovePokemon={handleClickRemovePokemon}
+            selectMultiplePokemonFlag={this.state.selectMultiplePokemonFlag}
+            pokemons={this.state.filteredPokeResponse}
+            handleClickPokemon={this.handleClickPokemon}
+          />
+        </ListGroup>
       </>
     );
   }
@@ -129,7 +129,7 @@ class PokeHome extends PureComponent {
 PokeHome.propTypes = {
   handleClickBtnCompare: PropTypes.func,
   handleClickAddPokemon: PropTypes.func,
-  handleClickRemovePokemon: PropTypes.func,
+  handleClickRemovePokemon: PropTypes.func
 };
 
 export default withAuth(withSelectedPokemons(PokeHome));

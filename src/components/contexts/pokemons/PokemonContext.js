@@ -35,15 +35,17 @@ export class PokemonContextProvider extends Component {
     });
   };
 
-  handleClickRemovePokemon = (ev) => {
+  handleClickRemovePokemon = ev => {
     const removedItemText = ev.target.value;
-    console.log("%c  BA :********* ","background: orange;", ev);
-    const newSelectedItemList = this.state.selectedItems.filter((item) => item !== removedItemText)
-    
+    console.log("%c  BA :********* ", "background: orange;", ev);
+    const newSelectedItemList = this.state.selectedItems.filter(
+      item => item !== removedItemText
+    );
+
     this.setState(() => {
-      return {selectedItems: newSelectedItemList}
-    })
-  }
+      return { selectedItems: newSelectedItemList };
+    });
+  };
 
   handleClickBtnCompare = () => {
     navigate("pokemon/compare");

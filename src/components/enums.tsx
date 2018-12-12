@@ -3,3 +3,5 @@ export const POKEMON_API = {
 };
 
 export const POKE_MAX_ITEM_LIMIT = 5;
+
+export const NO_DATA = "no data";
