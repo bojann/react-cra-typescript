@@ -1,3 +1,6 @@
+.list-group {
+  display: inline-block;
+}
 .list-group .list-group-item {
   width: 200px;
   text-align: center;
@@ -13,7 +16,7 @@
   &__poke-item {
     color: #3d3d3d;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: block;
   }
 }

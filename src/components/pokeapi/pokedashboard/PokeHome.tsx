@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { debounce, filter as _filter} from "lodash";
+import { debounce as _debounce, filter as _filter} from "lodash";
 import { ListGroup } from "react-bootstrap";
 import PropTypes from "prop-types";
 
@@ -54,24 +54,17 @@ class PokeHome extends PureComponent<Props, State> {
     pokeSearch: "",
     multiplePokemonsFlag: false
   };
-  private debouncedEvent: any;
 
-  private debounceEvent(...args: any) {
-    this.debouncedEvent = debounce(args);
-    return (e: React.SyntheticEvent<EventTarget>) => {
-      e.persist();
-      return this.debouncedEvent(e);
-    };
-  }
-
-  private filterItems = this.debounceEvent(() => {
+  private filterItems = () => {
     const searchParam = this.state.pokeSearch;
     const filteredItems: PokemonObj[] = _filter(this.state.pokeResponse, (pokeItem: {name: string, url: string}) => {
       return pokeItem.name.indexOf(searchParam) !== -1;
     });
 
     this.setState({ filteredPokeResponse: filteredItems });
-  }, 500);
+  };
+  
+  private debounceEvent = (timeout: number) => _debounce(this.filterItems, timeout);
 
   public handleChangeCheckbox = () => {
     this.setState(currentState => {
@@ -81,7 +74,7 @@ class PokeHome extends PureComponent<Props, State> {
     });
   };
 
-  private getPokeData(selectedPoke: string ): void {
+  private getPokeData(selectedPoke: string ) {
     if(selectedPoke) {
       fetchPokeData({
         path: POKEMON_API.POKEMONS_PATH,
@@ -102,17 +95,13 @@ class PokeHome extends PureComponent<Props, State> {
     this.getPokeData("all");
   }
 
-  public componentWillUnmount() {
-    this.debouncedEvent.cancel();
-  }
-
   public handleChangeSearch = (ev: React.SyntheticEvent<HTMLInputElement>) => {
     const target =  ev.currentTarget;
     this.setState(
       {
         pokeSearch: target.value
       },
-      this.filterItems(ev)
+      this.debounceEvent(500)
     );
   };
 

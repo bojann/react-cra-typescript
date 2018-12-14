@@ -23,6 +23,7 @@
       "services/*": ["./src/services/*"]
     },
     "esModuleInterop": true,
+    "strictFunctionTypes": true,
     "downlevelIteration": true
   },
   "exclude": [
