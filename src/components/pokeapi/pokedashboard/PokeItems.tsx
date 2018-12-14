@@ -14,9 +14,9 @@ interface PokemonObj {
 }
 
 interface Props {
-  handleClickAddPokemon: (event: React.SyntheticEvent<HTMLSelectElement>) => void,
-  handleClickRemovePokemon: (event: React.SyntheticEvent<HTMLSelectElement>) => void,
-  selectMultiplePokemonFlag: boolean,
+  handleClickAddPokemon: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+  handleClickRemovePokemon: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+  multiplePokemonsFlag: boolean,
   pokemons: PokemonObj[]
 }
 
@@ -24,7 +24,7 @@ class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
   public static propTypes = {
     handleClickAddPokemon: PropTypes.func,
     handleClickRemovePokemon: PropTypes.func,
-    selectMultiplePokemonFlag: PropTypes.bool,
+    multiplePokemonsFlag: PropTypes.bool,
     pokemons: PropTypes.array
   };
   
@@ -34,14 +34,14 @@ class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
 
   public render() {
     const {
-      selectMultiplePokemonFlag,
+      multiplePokemonsFlag,
       handleClickAddPokemon,
       handleClickRemovePokemon,
       pokemons
     } = this.props;
 
     return pokemons.map((pokemon: PokemonObj) => {
-      return selectMultiplePokemonFlag ? (
+      return multiplePokemonsFlag ? (
         <ListGroupItem key={pokemon.url}>
           <span className="list-group-item__poke-item">
             {pokemon.name.length > LIMIT_LENGTH
@@ -50,7 +50,7 @@ class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
           </span>
           <AddItemButton
             handleClickAddPokemon={handleClickAddPokemon}
-            selectMultiplePokemonFlag={selectMultiplePokemonFlag}
+            multiplePokemonsFlag={multiplePokemonsFlag}
             data-idname={pokemon.name}
           />
           <RemoveItemButton

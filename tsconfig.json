@@ -22,7 +22,8 @@
       "components/*": ["./src/components/*"],
       "services/*": ["./src/services/*"]
     },
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "downlevelIteration": true
   },
   "exclude": [
     "node_modules",

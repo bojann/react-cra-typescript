@@ -10,14 +10,14 @@ interface Props {
 }
 
 interface State {
-  selectedItems: string[];
+  selectedItemsState: string[];
 }
 
 const storage = window.localStorage;
 
 class PokeCompare extends Component<Props, State> {
   public state = {
-    selectedItems: []
+    selectedItemsState: []
   };
 
   public componentDidMount() {
@@ -36,22 +36,23 @@ class PokeCompare extends Component<Props, State> {
     storage.setItem("selectedPokemons", JSON.stringify(pokemons));
     this.setState(() => {
       return {
-        selectedItems: pokemons
+        selectedItemsState: pokemons
       };
     });
   }
 
   private renderPokeCompareList = () => {
-    return this.state.selectedItems.map(pokemon => {
+    return this.state.selectedItemsState.map(pokemon => {
       return <PokeDetail key={pokemon} pokemon={pokemon} />;
     });
   };
 
   public render() {
-    return this.state.selectedItems.length ? (
+    return this.state.selectedItemsState.length ? (
       <div>{this.renderPokeCompareList()}</div>
     ) : null;
   }
 }
 
+// @ts-ignore
 export default withSelectedPokemons(PokeCompare);

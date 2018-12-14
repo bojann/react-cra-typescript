@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b703d334-392d-4140-9166-343cacc7af38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/AddItemButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/AddItemButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/ButtonWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/ButtonWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/RemoveItemButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/components/pokeapi/pokebuttons/RemoveItemButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/enums.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/enums.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contexts/pokemons/withSelectedPokemons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contexts/pokemons/withSelectedPokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contexts/user/LoginContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contexts/user/LoginContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contexts/user/withAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contexts/user/withAuth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/MultipleSelectButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/MultipleSelectButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/PokeToolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/PokeToolbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/buttons/CustomButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/buttons/CustomButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/navigation/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/widgets/LoadingSpinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/widgets/LoadingSpinner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/fetchData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/fetchData.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
@@ -32,33 +43,39 @@
     <session id="-1526233496">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="7" />
-          <entry key="json" value="8" />
-          <entry key="tsx" value="11" />
+          <entry key="js" value="16" />
+          <entry key="json" value="12" />
+          <entry key="scss" value="3" />
+          <entry key="ts" value="4" />
+          <entry key="tsx" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="16" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="TypeScript JSX" value="11" />
-          <entry key="tsconfig" value="1" />
+          <entry key="SCSS" value="3" />
+          <entry key="TypeScript" value="4" />
+          <entry key="TypeScript JSX" value="49" />
+          <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
           <entry key="TsLintLanguageService" value="2" />
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -66,17 +83,19 @@
           <entry key="env" value="16" />
           <entry key="gitignore" value="25" />
           <entry key="js" value="2" />
-          <entry key="json" value="248" />
-          <entry key="tsx" value="2003" />
+          <entry key="json" value="257" />
+          <entry key="scss" value="52" />
+          <entry key="tsx" value="5155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="177" />
+          <entry key="JSON" value="178" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="41" />
-          <entry key="TypeScript JSX" value="2003" />
-          <entry key="tsconfig" value="71" />
+          <entry key="SCSS" value="52" />
+          <entry key="TypeScript JSX" value="5155" />
+          <entry key="tsconfig" value="79" />
         </counts>
       </usages-collector>
     </session>
@@ -84,49 +103,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tslint.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="479">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -135,23 +115,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="612">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.js">
+        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="414">
+              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#246#297#0" expanded="true" />
-                <element signature="e#673#758#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/buttons/CustomButton.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/navigation/Navigation.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/contexts/user/withAuth.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/user/Login.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="947">
+              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,26 +223,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PokeHome</find>
-      <find>@reach</find>
-      <find>&quot;@reach/router&quot;</find>
-      <find>NO</find>
-      <find>pokemon</find>
-      <find>activePage</find>
-      <find>photos</find>
-      <find>pokemonImages</find>
-      <find>PetM</find>
-      <find>PetMeda</find>
-      <find>map</find>
-      <find>getStorage</find>
+      <find>getItemStatus</find>
+      <find>PokeToolbar</find>
+      <find>MultipleSelectButton</find>
+      <find>onClic</find>
+      <find>validateForm</find>
+      <find>handle</find>
       <find>props</find>
-      <find>RouteCom</find>
-      <find>RouteCompo</find>
-      <find>CSSTransition</find>
-      <find>Component</find>
-      <find>RouteComponentProps</find>
-      <find>selectMultiplePokemonFlag</find>
+      <find>children</find>
+      <find>children:</find>
+      <find>ReactNod</find>
+      <find>PokeItems</find>
+      <find>handleClickPokemon</find>
+      <find>PokeHome</find>
+      <find>handleClickAddPokemon</find>
+      <find>getPokeData</find>
+      <find>filteredItems</find>
+      <find>filter</find>
+      <find>url</find>
+      <find>PokemonObj</find>
+      <find>handleChangeSearch</find>
+      <find>filterItems</find>
+      <find>dataIdName</find>
+      <find>isDisable</find>
+      <find>handleClickAddBtn</find>
+      <find>@types/react-bootstrap</find>
+      <find>react-bootstrap</find>
+      <find>bsSize</find>
+      <find>size-small</find>
+      <find>selectedItems</find>
+      <find>btn-size--small&quot;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>multiplePokemonsFlag</replace>
+      <replace>btn-size--small</replace>
+      <replace>&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,18 +270,30 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.tsx" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
         <option value="$PROJECT_DIR$/src/components/enums.tsx" />
         <option value="$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.tsx" />
-        <option value="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx" />
-        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx" />
-        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/services/fetchData.tsx" />
         <option value="$PROJECT_DIR$/tslint.json" />
-        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/MultipleSelectButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/contexts/user/LoginContext.tsx" />
+        <option value="$PROJECT_DIR$/src/components/contexts/pokemons/withSelectedPokemons.tsx" />
+        <option value="$PROJECT_DIR$/src/components/contexts/user/withAuth.tsx" />
+        <option value="$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.scss" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx" />
         <option value="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokemanagement/PokeToolbar.tsx" />
+        <option value="$PROJECT_DIR$/src/components/shared/navigation/Navigation.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/shared/buttons/CustomButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx" />
+        <option value="$PROJECT_DIR$/src/components/user/Login.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
       </list>
     </option>
   </component>
@@ -264,6 +354,29 @@
               <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contexts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contexts" type="462c0819:PsiDirectoryNode" />
+              <item name="pokemons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contexts" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="pokeapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,6 +410,52 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="pokeapi" type="462c0819:PsiDirectoryNode" />
               <item name="pokedetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pokeapi" type="462c0819:PsiDirectoryNode" />
+              <item name="pokemanagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cra-tsx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-cra-tsx" type="b2602c69:ProjectViewProjectNode" />
@@ -346,15 +505,17 @@
       <option name="presentableId" value="Default" />
       <updated>1544435023129</updated>
       <workItem from="1544435024339" duration="1815000" />
-      <workItem from="1544440861288" duration="32877000" />
+      <workItem from="1544440861288" duration="36558000" />
+      <workItem from="1544691583707" duration="17904000" />
+      <workItem from="1544772071914" duration="7659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34692000" />
+    <option name="totallyTimeSpent" value="63936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1745" y="-4" width="1615" height="1054" extended-state="6" />
+    <frame x="1744" y="-11" width="1617" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20037688" />
@@ -372,7 +533,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36609071" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29049677" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,23 +579,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/petfinder-client/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/services/fetchData.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokemanagement/MultipleSelectButton.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/widgets/LoadingSpinner.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/buttons/CustomButton.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contexts/pokemons/withSelectedPokemons.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="65" />
           <folding>
-            <element signature="e#1#27#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/petfinder-client/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-bootstrap/lib/utils/bootstrapUtils.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="216">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-bootstrap/lib/Button.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-bootstrap/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contexts/pokemons/PokemonContext.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="93" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokemanagement/CompareButton.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokemanagement/PokeToolbar.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contexts/user/LoginContext.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="101" column="28" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contexts/user/withAuth.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/navigation/Navigation.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -443,81 +735,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/AddItemButton.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="234">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/buttons/CustomButton.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokecompare/PokeCompare.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/ButtonWidget.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="414">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
+    <entry file="file://$PROJECT_DIR$/src/components/user/Login.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="947">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokebuttons/RemoveItemButton.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="612">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedetails/PokeDetail.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="414">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#246#297#0" expanded="true" />
-            <element signature="e#673#758#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pokeapi/pokedashboard/PokeItems.tsx">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="432">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>

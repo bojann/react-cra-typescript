@@ -6,30 +6,35 @@ import CompareButton from "components/pokeapi/pokemanagement/CompareButton";
 
 import "./PokeToolbar.scss";
 
-class PokeToolbar extends PureComponent {
-  render() {
+interface Props {
+  handleChangeCheckbox: (event: React.SyntheticEvent<HTMLInputElement>) => void,
+  selectedItems: string[],
+  multiplePokemonsFlag: boolean,
+  handleClickBtnCompare: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+}
+
+class PokeToolbar extends PureComponent<Props> {
+  public static propTypes = {
+    handleChangeCheckbox: PropTypes.func,
+    selectedItems: PropTypes.array,
+    handleClickBtnCompare: PropTypes.func,
+    multiplePokemonsFlag: PropTypes.bool
+  };
+  
+  public render() {
     return (
       <div className="poke-toolbar">
         <MultipleSelectButton
           handleChangeCheckbox={this.props.handleChangeCheckbox}
-          getItemStatus={this.props.getItemStatus}
-          handleClickBtnCompare={this.props.handleClickBtnCompare}
         />
         <CompareButton
           selectedItems={this.props.selectedItems}
           handleClickBtnCompare={this.props.handleClickBtnCompare}
-          selectMultiplePokemonFlag={this.props.selectMultiplePokemonFlag}
+          multiplePokemonsFlag={this.props.multiplePokemonsFlag}
         />
       </div>
     );
   }
 }
-
-PokeToolbar.propTypes = {
-  handleChangeCheckbox: PropTypes.func,
-  selectedItems: PropTypes.array,
-  handleClickBtnCompare: PropTypes.func,
-  selectMultiplePokemonFlag: PropTypes.bool
-};
 
 export default PokeToolbar;

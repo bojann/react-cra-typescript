@@ -14,8 +14,17 @@ import CustomButton from "components/shared/buttons/CustomButton";
 
 import "./Login.scss";
 
-class Login extends Component {
-  render() {
+interface Props {
+  handleChangeUser: (event: React.FormEvent<FormControl>) => void,
+  handleChangePassw: (event: React.FormEvent<FormControl>) => void,
+  handleSubmitForm: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+  validateForm: () => string | boolean,
+  user: string,
+  passw: string
+}
+
+class Login extends Component<Props> {
+  public  render() {
     const {
       handleChangeUser,
       handleChangePassw,
@@ -24,13 +33,14 @@ class Login extends Component {
       user,
       passw
     } = this.props;
+    const isDisabled = !validateForm();
 
     return (
       <div className="login-container">
         <Grid>
           <Row>
             <Form
-              horizontal
+              horizontal={true}
               className="login-container-form"
               onSubmit={handleSubmitForm}
             >
@@ -49,8 +59,8 @@ class Login extends Component {
                     type="text"
                     id="userName"
                     value={user}
-                    onChange={ev => handleChangeUser(ev.target.value)}
-                    onBlur={ev => handleChangeUser(ev.target.value)}
+                    onChange={handleChangeUser}
+                    onBlur={handleChangeUser}
                   />
                 </Col>
                 <FormGroup />
@@ -62,8 +72,8 @@ class Login extends Component {
                     type="text"
                     id="userPassw"
                     value={passw}
-                    onChange={ev => handleChangePassw(ev.target.value)}
-                    onBlur={ev => handleChangePassw(ev.target.value)}
+                    onChange={handleChangePassw}
+                    onBlur={handleChangePassw}
                   />
                 </Col>
               </FormGroup>
@@ -73,10 +83,12 @@ class Login extends Component {
                   <CustomButton
                     bsSize="large"
                     type="submit"
-                    disabled={!validateForm()}
-                  >
-                    Sign in
-                  </CustomButton>
+                    isDisabled={isDisabled}
+                    btnName="Sign in"
+                    className=""
+                    handleClickEvent={handleSubmitForm}
+                    isVisible={true}
+                  />
                 </Col>
               </FormGroup>
             </Form>
@@ -87,4 +99,5 @@ class Login extends Component {
   }
 }
 
+// @ts-ignore
 export default withAuth(Login);

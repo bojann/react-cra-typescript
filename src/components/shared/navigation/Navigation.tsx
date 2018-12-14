@@ -6,8 +6,13 @@ import CustomButton from "components/shared/buttons/CustomButton";
 
 import "./Navigation.scss";
 
-class Navigation extends Component {
-  render() {
+interface Props {
+  isUserLogged: boolean,
+  handleSignOut: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void
+}
+
+class Navigation extends Component<Props> {
+  public render() {
     const { isUserLogged, handleSignOut } = this.props;
 
     return (
@@ -17,16 +22,17 @@ class Navigation extends Component {
         <Link to="login">
           <CustomButton
             bsStyle="warning"
-            onClick={handleSignOut}
+            handleClickEvent={handleSignOut}
             isVisible={true}
             isDisabled={false}
-          >
-            {isUserLogged ? "Sign Out" : "Login"}
-          </CustomButton>
+            btnName={isUserLogged ? "Sign Out" : "Login"}
+            className=""
+          />
         </Link>
       </nav>
     );
   }
 }
 
+// @ts-ignore
 export default withAuth(Navigation);

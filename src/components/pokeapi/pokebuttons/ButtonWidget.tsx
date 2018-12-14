@@ -2,43 +2,50 @@ import React, { Component } from "react";
 import CustomButton from "components/shared/buttons/CustomButton";
 
 interface State {
-  btnName: string;
-  bsStyle: string;
-  bsSize: string;
-  isVisible: boolean;
+  isVisible: boolean,
+  isDisabled : boolean,
 }
+
+const BTN_STYLE = {
+  add: "add-button",
+  remove: "remove-button",
+  change: "change-button"
+};
 
 class ButtonWidget extends Component<{}, State> {
   public state = {
-    btnName: "Add Item",
-    bsStyle: "primary",
-    bsSize: "small",
-    isVisible: false
+    isVisible: false,
+    isDisabled : false,
   };
   public handleClickAddBtn = () => null;
 
   public render() {
-    const btnStyle = {
-      add: "add-button",
-      remove: "remove-button",
-      change: "change-button"
-    };
-
     return (
       <div className="poke-btn-widget">
         <CustomButton
-          {...this.state}
-          className={btnStyle.add}
           handleClickEvent={this.handleClickAddBtn}
-        >
-          Add Item
-        </CustomButton>
-        <CustomButton {...this.state} handleClickEvent={this.handleClickAddBtn}>
-          Remove Item
-        </CustomButton>
-        <CustomButton {...this.state} handleClickEvent={this.handleClickAddBtn}>
-          Change Item
-        </CustomButton>
+          bsStyle="primary"
+          btnName="Add Item"
+          bsSize="small"
+          className={BTN_STYLE.add}
+          {...this.state}
+        />
+        <CustomButton 
+          handleClickEvent={this.handleClickAddBtn}
+          btnName="Remove Item"
+          bsStyle="primary"
+          bsSize="small"
+          className={BTN_STYLE.add}
+          {...this.state}
+        />
+        <CustomButton 
+          handleClickEvent={this.handleClickAddBtn}
+          btnName="Change Item"
+          bsStyle="primary"
+          bsSize="small"
+          className={BTN_STYLE.add}
+          {...this.state}
+        />
       </div>
     );
   }

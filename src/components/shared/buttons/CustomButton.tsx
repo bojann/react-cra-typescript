@@ -1,19 +1,32 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Sizes } from "react-bootstrap";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
 import "./CustomButton.scss";
 
-const CustomButton = props => {
+interface Props {
+  btnName: string,
+  className: string,
+  handleClickEvent: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+  isDisabled : boolean,
+  isVisible : boolean,
+  bsStyle?: "success" | "warning" | "danger" | "info" | "default" | "primary" | "link",
+  bsSizes?: Sizes,
+  type?: string,
+  children?: JSX.Element,
+  rest?: any[]
+}
+
+const CustomButton = (props: Props) => {
   const BASE_CLASS = "poke-button";
   const {
     btnName,
     className,
     handleClickEvent,
-    bsStyle,
     isDisabled = true,
     isVisible = true,
+    children,
     ...rest
   } = props;
   const classNamesArr = className ? className.split(" ") : [];
@@ -28,12 +41,11 @@ const CustomButton = props => {
   return (
     <Button
       className={itemStyleClasses}
-      bsStyle={bsStyle}
       onClick={handleClickEvent}
       disabled={isDisabled}
       {...rest}
     >
-      {btnName ? btnName : props.children}
+      {btnName ? btnName : children}
     </Button>
   );
 };

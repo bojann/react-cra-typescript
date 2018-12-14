@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 import "./MultipleSelectButton.scss";
 
-const MultipleSelectButton = props => {
+interface Props {
+  handleChangeCheckbox: (event: React.SyntheticEvent<HTMLInputElement>) => void
+}
+
+const MultipleSelectButton = (props: Props) => {
   return (
     <div className="poke-checkbox">
       <input

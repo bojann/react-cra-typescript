@@ -1,14 +1,26 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 // import axios from "axios";
 import { navigate } from "@reach/router";
 
 import { POKE_MAX_ITEM_LIMIT } from "components/enums";
 // import {fetchPokeData} from "services/fetchData";
 
+
+interface State {
+  selectedItems: string[],
+  handleClickAddPokemon: (event: React.SyntheticEvent<HTMLSelectElement>) => void,
+  handleClickBtnCompare: (event: React.SyntheticEvent<HTMLSelectElement>) => void,
+  handleClickRemovePokemon: (event: React.SyntheticEvent<HTMLSelectElement>) => void
+}
+
+interface Props {
+ children: React.ReactNode 
+}
+
 export const PokemonContext = React.createContext(null);
 
-export class PokemonContextProvider extends Component {
-  constructor(props) {
+export class PokemonContextProvider extends Component<Props, State> {
+  public constructor(props: Props) {
     super(props);
 
     this.state = {
@@ -19,24 +31,23 @@ export class PokemonContextProvider extends Component {
     };
   }
 
-  handleClickAddPokemon = ev => {
-    ev.persist();
+  public handleClickAddPokemon = (ev: React.SyntheticEvent<HTMLSelectElement>) => {
+    const idName = ev.currentTarget.dataset && ev.currentTarget.dataset.idname;
 
-    if (this.state.selectedItems.length > POKE_MAX_ITEM_LIMIT - 1) {
-      return false;
-    }
+    if (idName && this.state.selectedItems.length > POKE_MAX_ITEM_LIMIT - 1) {
+      this.setState((currentState) => {      
+        const newStateOfSelectedItems = [...currentState.selectedItems, idName];
+        const filteredList = new Set(newStateOfSelectedItems);
 
-    this.setState(currentState => {
-      return {
-        selectedItems: [
-          ...new Set([...currentState.selectedItems, ev.target.dataset.idname])
-        ]
-      };
-    });
+        return {
+          selectedItems: Array.from(filteredList)
+        };
+      });
+    }    
   };
 
-  handleClickRemovePokemon = ev => {
-    const removedItemText = ev.target.value;
+  public handleClickRemovePokemon = (ev: React.SyntheticEvent<HTMLSelectElement>) => {
+    const removedItemText = ev.currentTarget.value;
     console.log("%c  BA :********* ", "background: orange;", ev);
     const newSelectedItemList = this.state.selectedItems.filter(
       item => item !== removedItemText
@@ -47,7 +58,7 @@ export class PokemonContextProvider extends Component {
     });
   };
 
-  handleClickBtnCompare = () => {
+  public handleClickBtnCompare = () => {
     navigate("pokemon/compare");
     // const requestArr = this.state.selectedItems.map(selectedPoke => {
     //   return fetchPokeData({
@@ -79,11 +90,10 @@ export class PokemonContextProvider extends Component {
     //   });
   };
 
-  render() {
-    return (
-      <PokemonContext.Provider value={this.state}>
+  public render() {
+    // @ts-ignore
+    return <PokemonContext.Provider value={this.state}>
         {this.props.children}
       </PokemonContext.Provider>
-    );
   }
 }

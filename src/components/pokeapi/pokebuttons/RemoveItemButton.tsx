@@ -3,25 +3,23 @@ import React, { Component } from "react";
 import CustomButton from "components/shared/buttons/CustomButton";
 
 interface Props {
-  "data-idname": string | number;
-  handleClickRemovePokemon: (
-    event: React.SyntheticEvent<HTMLSelectElement>
-  ) => void;
+  "data-idname": string;
+  handleClickRemovePokemon: (event: React.SyntheticEvent<HTMLSelectElement | EventTarget>) => void;
 }
 
 interface State {
-  className: string;
-  bsStyle: string;
-  bsSize: string;
-  isDisabled: boolean;
+  className: string,
+  btnName: string,
+  isDisabled : boolean,
+  isVisible : boolean
 }
 
 class RemoveItemButton extends Component<Props, State> {
   public state = {
     className: "remove-button",
-    bsStyle: "danger",
-    bsSize: "small",
-    isDisabled: false
+    isDisabled: false,
+    isVisible: false,
+    btnName: "Remove Poke"
   };
 
   public render() {
@@ -29,12 +27,11 @@ class RemoveItemButton extends Component<Props, State> {
     const { handleClickRemovePokemon } = this.props;
     return (
       <CustomButton
-        {...this.state}
+        bsStyle="danger"
         data-idname={dataIdName}
         handleClickEvent={handleClickRemovePokemon}
-      >
-        Remove Poke
-      </CustomButton>
+        {...this.state}
+      />
     );
   }
 }

@@ -4,22 +4,20 @@ import PropTypes from "prop-types";
 import CustomButton from "components/shared/buttons/CustomButton";
 
 interface Props {
-  selectMultiplePokemonFlag: boolean;
-  handleClickAddPokemon: (
-    event: React.SyntheticEvent<HTMLSelectElement>
-  ) => void;
-  "data-idname": number | string;
+  multiplePokemonsFlag: boolean;
+  handleClickAddPokemon: (event: React.SyntheticEvent<HTMLSelectElement | EventTarget>) => void;
+  "data-idname": string;
 }
 
 interface State {
-  className: string;
-  bsStyle: string;
-  bsSize: string;
+  className: string,
+  btnName: string,
+  isVisible : boolean,
 }
 
 class ButtonAddItem extends PureComponent<Props, State> {
   public static propTypes = {
-    selectMultiplePokemonFlag: PropTypes.oneOfType([
+    multiplePokemonsFlag: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.bool
     ]),
@@ -28,24 +26,22 @@ class ButtonAddItem extends PureComponent<Props, State> {
 
   public state = {
     className: "add-button",
-    bsStyle: "primary",
-    bsSize: "small"
+    btnName: 'Add Poke',
+    isVisible : true
   };
 
   public render() {
     const dataIdName = this.props["data-idname"];
-    const isDisabled = !this.props.selectMultiplePokemonFlag;
-    const handleClickEvent = this.props.handleClickAddPokemon;
+    const isDisabled = !this.props.multiplePokemonsFlag;
 
     return (
       <CustomButton
-        {...this.state}
         isDisabled={isDisabled}
         data-idname={dataIdName}
-        handleClickEvent={handleClickEvent}
-      >
-        Add Poke
-      </CustomButton>
+        handleClickEvent={this.props.handleClickAddPokemon}
+        bsStyle="primary"
+        {...this.state}
+      />
     );
   }
 }

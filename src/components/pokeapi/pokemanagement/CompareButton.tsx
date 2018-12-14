@@ -6,11 +6,17 @@ import { POKE_MAX_ITEM_LIMIT } from "components/enums";
 
 import "./CompareButton.scss";
 
-const CompareButton = props => {
-  const itemStatusLength = props.selectedItems.length;
-  const isDisabled = props.selectMultiplePokemonFlag ? false : true;
+interface Props {
+  selectedItems: string[],
+  multiplePokemonsFlag: boolean,
+  handleClickBtnCompare: (event: React.SyntheticEvent<HTMLSelectElement | EventTarget>) => void
+}
 
-  return props.selectMultiplePokemonFlag ? (
+const CompareButton = (props: Props) => {
+  const itemStatusLength = props.selectedItems.length;
+  const btnDisabled = !props.multiplePokemonsFlag;
+
+  return props.multiplePokemonsFlag ? (
     <div className="poke-toolbar-features">
       <div className="poke-toolbar-features__item-info">
         <span>
@@ -22,10 +28,11 @@ const CompareButton = props => {
       <div className="poke-toolbar-features__compare-btn">
         <CustomButton
           handleClickEvent={props.handleClickBtnCompare}
-          isDisabled={isDisabled}
-        >
-          Compare selected
-        </CustomButton>
+          isDisabled={btnDisabled}
+          isVisible={true}
+          btnName="Compare selected"
+          className=""
+        />
       </div>
     </div>
   ) : null;
@@ -34,7 +41,7 @@ const CompareButton = props => {
 CompareButton.propTypes = {
   selectedItems: PropTypes.array,
   handleClickBtnCompare: PropTypes.func,
-  selectMultiplePokemonFlag: PropTypes.oneOfType([
+  multiplePokemonsFlag: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool
   ])
