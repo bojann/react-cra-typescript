@@ -24,7 +24,7 @@ class Navigation extends Component<Props> {
             bsStyle="warning"
             handleClickEvent={handleSignOut}
             isVisible={true}
-            isDisabled={false}
+            disabled={false}
             btnName={isUserLogged ? "Sign Out" : "Login"}
             className=""
           />

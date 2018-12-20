@@ -54,5 +54,4 @@ class PokeCompare extends Component<Props, State> {
   }
 }
 
-// @ts-ignore
 export default withSelectedPokemons(PokeCompare);

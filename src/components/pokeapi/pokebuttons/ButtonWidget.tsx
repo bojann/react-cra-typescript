@@ -3,7 +3,7 @@ import CustomButton from "components/shared/buttons/CustomButton";
 
 interface State {
   isVisible: boolean,
-  isDisabled : boolean,
+  disabled : boolean,
 }
 
 const BTN_STYLE = {
@@ -15,7 +15,7 @@ const BTN_STYLE = {
 class ButtonWidget extends Component<{}, State> {
   public state = {
     isVisible: false,
-    isDisabled : false,
+    disabled : false,
   };
   public handleClickAddBtn = () => null;
 

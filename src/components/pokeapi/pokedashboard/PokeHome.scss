@@ -8,6 +8,13 @@
   margin: 10px;
   border-radius: 5px;
   cursor: pointer;
+
+  .list-group-item__add-button {
+    display: block;
+  }
+  .list-group-item__remove-button {
+    display: none;
+  }
   
   &:hover {
     background: #e2e88f;
@@ -17,6 +24,25 @@
     color: #3d3d3d;
     width: 100%;
     font-size: 1.6rem;
+    display: block;
+  }
+  
+  & > .poke-button {
+    margin: 0 auto;
+  }
+  
+  &--selected {
+    background: #ddd82e;
+    opacity: 0.8;
+    
+  }
+}
+
+.list-group .list-group-item--selected {
+  .list-group-item__add-button {
+    display: none;
+  }
+  .list-group-item__remove-button {
     display: block;
   }
 }

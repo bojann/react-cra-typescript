@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 import AddItemButton from "components/pokeapi/pokebuttons/AddItemButton";
 import RemoveItemButton from "components/pokeapi/pokebuttons/RemoveItemButton";
+import {POKE_MAX_ITEM_LIMIT} from "components/enums";
 
 const LIMIT_LENGTH = 16;
 
@@ -17,7 +18,8 @@ interface Props {
   handleClickAddPokemon: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
   handleClickRemovePokemon: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
   multiplePokemonsFlag: boolean,
-  pokemons: PokemonObj[]
+  pokemons: PokemonObj[],
+  selectedItems: string[]
 }
 
 class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
@@ -37,12 +39,23 @@ class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
       multiplePokemonsFlag,
       handleClickAddPokemon,
       handleClickRemovePokemon,
-      pokemons
+      pokemons,
+      selectedItems
     } = this.props;
 
     return pokemons.map((pokemon: PokemonObj) => {
+      let checkedItemNames = 0;
+      let itemCssClass = '';
+      
+      if( checkedItemNames <= POKE_MAX_ITEM_LIMIT ) {
+        const wasSelectedItem = selectedItems.find( (item:string) => item === pokemon.name );
+        itemCssClass = `${wasSelectedItem ? 'list-group-item--selected' : ''}`;
+        checkedItemNames += 1;
+      }
+      
+      
       return multiplePokemonsFlag ? (
-        <ListGroupItem key={pokemon.url}>
+        <ListGroupItem className={itemCssClass} key={pokemon.url}>
           <span className="list-group-item__poke-item">
             {pokemon.name.length > LIMIT_LENGTH
               ? this.trimName(pokemon.name)
@@ -54,8 +67,8 @@ class PokeItems extends PureComponent<Props, RouteComponentProps<{}>> {
             data-idname={pokemon.name}
           />
           <RemoveItemButton
-            data-idname={pokemon.name}
             handleClickRemovePokemon={handleClickRemovePokemon}
+            data-idname={pokemon.name}
           />
         </ListGroupItem>
       ) : (

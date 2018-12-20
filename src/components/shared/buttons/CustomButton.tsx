@@ -7,10 +7,10 @@ import "./CustomButton.scss";
 
 interface Props {
   btnName: string,
-  className: string,
-  handleClickEvent: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
-  isDisabled : boolean,
-  isVisible : boolean,
+  handleClickEvent?: (event: React.SyntheticEvent<EventTarget | HTMLSelectElement>) => void,
+  className?: string,
+  disabled? : boolean,
+  isVisible? : boolean,
   bsStyle?: "success" | "warning" | "danger" | "info" | "default" | "primary" | "link",
   bsSizes?: Sizes,
   type?: string,
@@ -23,26 +23,28 @@ const CustomButton = (props: Props) => {
   const {
     btnName,
     className,
-    handleClickEvent,
-    isDisabled = true,
-    isVisible = true,
+    handleClickEvent= () => {},
+    isVisible,
     children,
     ...rest
   } = props;
   const classNamesArr = className ? className.split(" ") : [];
-  const classConcat = classNamesArr.map(name => `${BASE_CLASS}--${name}`);
-
-  const itemStyleClasses = classNames(
+  // const classConcat = classNamesArr.map(name => `${name}`);
+  let itemStyleClasses = classNames(
     BASE_CLASS,
-    isVisible ? `${BASE_CLASS}--visible` : `${BASE_CLASS}--hidden`,
-    classConcat
+    classNamesArr
   );
+
+  if(isVisible) {
+    itemStyleClasses = classNames(
+      isVisible ? `${BASE_CLASS}--visible` : `${BASE_CLASS}--hidden`
+    );
+  } 
 
   return (
     <Button
       className={itemStyleClasses}
       onClick={handleClickEvent}
-      disabled={isDisabled}
       {...rest}
     >
       {btnName ? btnName : children}

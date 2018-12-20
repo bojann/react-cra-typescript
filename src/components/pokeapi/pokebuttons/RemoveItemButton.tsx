@@ -9,16 +9,12 @@ interface Props {
 
 interface State {
   className: string,
-  btnName: string,
-  isDisabled : boolean,
-  isVisible : boolean
+  btnName: string
 }
 
 class RemoveItemButton extends Component<Props, State> {
   public state = {
-    className: "remove-button",
-    isDisabled: false,
-    isVisible: false,
+    className: "list-group-item__remove-button",
     btnName: "Remove Poke"
   };
 

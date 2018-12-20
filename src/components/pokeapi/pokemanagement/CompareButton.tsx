@@ -14,7 +14,7 @@ interface Props {
 
 const CompareButton = (props: Props) => {
   const itemStatusLength = props.selectedItems.length;
-  const btnDisabled = !props.multiplePokemonsFlag;
+  const isDisabled = !props.multiplePokemonsFlag;
 
   return props.multiplePokemonsFlag ? (
     <div className="poke-toolbar-features">
@@ -28,7 +28,7 @@ const CompareButton = (props: Props) => {
       <div className="poke-toolbar-features__compare-btn">
         <CustomButton
           handleClickEvent={props.handleClickBtnCompare}
-          isDisabled={btnDisabled}
+          disabled={isDisabled}
           isVisible={true}
           btnName="Compare selected"
           className=""

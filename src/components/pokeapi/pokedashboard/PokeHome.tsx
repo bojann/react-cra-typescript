@@ -140,6 +140,7 @@ class PokeHome extends PureComponent<Props, State> {
             handleClickRemovePokemon={handleClickRemovePokemon}
             multiplePokemonsFlag={this.state.multiplePokemonsFlag}
             pokemons={this.state.filteredPokeResponse}
+            selectedItems={selectedItems}
           />
         </ListGroup>
       </>

@@ -6,6 +6,7 @@ import BlizzardHome from "components/blizzardapi/BlizzardHome";
 import LoadingSpinner from "components/shared/widgets/LoadingSpinner";
 import Dashboard from "components/Dashboard";
 import Login from "components/user/Login";
+import Signup from "components/user/Signup";
 import { LoginContextProvider } from "components/contexts/user/LoginContext";
 import { PokemonContextProvider } from "components/contexts/pokemons/PokemonContext";
 import NoMatchPage from "components/NoMatchPage";
@@ -39,6 +40,7 @@ class App extends Component {
               <NoMatchPage default />
             </Dashboard>
             <Login path="login" />
+            <Signup path="signup" />
           </ReachRouter>
         </PokemonContextProvider>
       </LoginContextProvider>

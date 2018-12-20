@@ -1,11 +1,25 @@
 .login-container {
   
   &-form {
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: #3d3d3d;
     color: #fff;
-    text-align: center;
+    width: 100%;
     padding: 30px;
     margin-top: 40px;
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  .form-group > .control-label {
+    text-align: right;
+  }
+  
+  .form-group > .control-label,
+  .form-group > .nameInput,
+  .form-group > .passwInput {
+    display: inline-block;
   }
 }

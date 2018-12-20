@@ -20,21 +20,17 @@ interface Props {
 export const PokemonContext = React.createContext(null);
 
 export class PokemonContextProvider extends Component<Props, State> {
-  public constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      selectedItems: [],
-      handleClickAddPokemon: this.handleClickAddPokemon,
-      handleClickBtnCompare: this.handleClickBtnCompare,
-      handleClickRemovePokemon: this.handleClickRemovePokemon
-    };
-  }
-
   public handleClickAddPokemon = (ev: React.SyntheticEvent<HTMLSelectElement>) => {
-    const idName = ev.currentTarget.dataset && ev.currentTarget.dataset.idname;
-
-    if (idName && this.state.selectedItems.length > POKE_MAX_ITEM_LIMIT - 1) {
+    const target = ev.currentTarget;
+    const idName = target.dataset && target.dataset.idname;
+    
+    if (idName && this.state.selectedItems.length < POKE_MAX_ITEM_LIMIT) {
+      const parentOfTarget = target.parentElement;
+      const isListItem = parentOfTarget && parentOfTarget.className === "list-group-item";
+      if(parentOfTarget && isListItem) {
+        parentOfTarget.classList.add("list-group-item--selected");
+      }
+      
       this.setState((currentState) => {      
         const newStateOfSelectedItems = [...currentState.selectedItems, idName];
         const filteredList = new Set(newStateOfSelectedItems);
@@ -48,7 +44,6 @@ export class PokemonContextProvider extends Component<Props, State> {
 
   public handleClickRemovePokemon = (ev: React.SyntheticEvent<HTMLSelectElement>) => {
     const removedItemText = ev.currentTarget.value;
-    console.log("%c  BA :********* ", "background: orange;", ev);
     const newSelectedItemList = this.state.selectedItems.filter(
       item => item !== removedItemText
     );
@@ -89,8 +84,16 @@ export class PokemonContextProvider extends Component<Props, State> {
     //     console.error(error);
     //   });
   };
+  
+  public state = {
+    selectedItems: [],
+    handleClickAddPokemon: this.handleClickAddPokemon,
+    handleClickBtnCompare: this.handleClickBtnCompare,
+    handleClickRemovePokemon: this.handleClickRemovePokemon
+  };
 
   public render() {
+    console.log("%c  BA :********* ","background: orange;", this.state.selectedItems);
     // @ts-ignore
     return <PokemonContext.Provider value={this.state}>
         {this.props.children}

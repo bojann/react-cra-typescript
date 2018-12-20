@@ -11,8 +11,7 @@ interface Props {
 
 interface State {
   className: string,
-  btnName: string,
-  isVisible : boolean,
+  btnName: string
 }
 
 class ButtonAddItem extends PureComponent<Props, State> {
@@ -25,18 +24,15 @@ class ButtonAddItem extends PureComponent<Props, State> {
   };
 
   public state = {
-    className: "add-button",
-    btnName: 'Add Poke',
-    isVisible : true
+    className: "list-group-item__add-button",
+    btnName: 'Add Poke'
   };
 
   public render() {
     const dataIdName = this.props["data-idname"];
-    const isDisabled = !this.props.multiplePokemonsFlag;
 
     return (
       <CustomButton
-        isDisabled={isDisabled}
         data-idname={dataIdName}
         handleClickEvent={this.props.handleClickAddPokemon}
         bsStyle="primary"
